@@ -1,15 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Digital Clock</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Student Project Portal</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="clock">
-    <h1 id="time"></h1>
-  </div>
-  <script src="script.js"></script>
+    <header>
+        <h1>Student Project Portal</h1>
+    </header>
+
+    <main>
+        <!-- Registration Section -->
+        <section id="register">
+            <h2>Register</h2>
+            <form id="registerForm">
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <input type="password" id="password" placeholder="Password" required>
+                <button type="submit">Register</button>
+            </form>
+        </section>
+
+        <!-- Student Info & Project Submission -->
+        <section id="studentSection" style="display:none;">
+            <h2>Welcome, <span id="studentName"></span></h2>
+            <p>Email: <span id="studentEmail"></span></p>
+
+            <!-- Project Submission -->
+            <h3>Submit a Project</h3>
+            <form id="projectForm">
+                <input type="text" id="projectTitle" placeholder="Project Title" required>
+                <textarea id="projectAbstract" placeholder="Project Abstract" required></textarea>
+                <input type="file" id="projectFile" required>
+                <button type="submit">Submit Project</button>
+            </form>
+
+            <!-- Submitted Projects -->
+            <h3>Your Projects</h3>
+            <ul id="projectList"></ul>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
 </body>
 </html>
