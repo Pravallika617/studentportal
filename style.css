@@ -1,0 +1,12 @@
+body {
+  background: #000;
+  color: #0f0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Courier New', monospace;
+}
+.clock h1 {
+  font-size: 4em;
+}
